@@ -9,14 +9,15 @@ public class MergeSort {
 		return f.getZeitUnterschied();
 	}
 	
-	private void mergeSort(int A[],int p, int r){
+	private int[] mergeSort(int A[],int p, int r){
 		int q;
 		if(p<r){
 			q = (p+r)/2;
-			mergeSort(A,p,q);
-			mergeSort(A,q+1,r);
+			A = mergeSort(A,p,q);
+			A = mergeSort(A,q+1,r);
 			A = merge(A,p,q,r);
 		}
+		return A;
 	}
 	
 	private int[] merge(int A[], int p, int q, int r){
