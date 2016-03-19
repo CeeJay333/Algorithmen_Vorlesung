@@ -5,8 +5,9 @@ public class Main {
 	public static void main(String[] args) {
 		Funktionen f = new Funktionen();
 		MergeSort m = new MergeSort();
-		int a[] = f.generateRandomArray(6, 100);
-		m.sortAsc(a, 0, a.length);
+		//int a[] = f.generateRandomArray(100, 100);
+		int a[] = f.generateArray(true, 1000);
+		System.out.println("Dauer: " + m.sortDesc(a, 0, a.length));		
 	}
 	
 	/*
