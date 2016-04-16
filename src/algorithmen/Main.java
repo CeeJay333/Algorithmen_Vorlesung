@@ -5,14 +5,17 @@ public class Main {
 	public static void main(String[] args) {
 		Funktionen f = new Funktionen();
 		MergeSort m = new MergeSort();
-		//int a[] = f.generateRandomArray(100, 100);
-		int a[] = f.generateArray(true, 1000);
+		int a[] = f.generateRandomArray(100, 100);
 		System.out.println("Dauer: " + m.sortDesc(a, 0, a.length));		
 	}
 	
 	/*
 	public static void archiv(){
-		//Vorlesung 3
+		//Vorlesung 3+4
+		//MergeSort
+		MergeSort m = new MergeSort();		
+		int a[] = f.generateRandomArray(100, 100);
+		System.out.println("Dauer: " + m.sortAsc(a, 0, a.length));	
 		
 		
 		----------------------------------------------
