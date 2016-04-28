@@ -1,6 +1,6 @@
 package algorithmen;
 
-public class Übung1Suchproblem {
+public class Ãœbung1Suchproblem {
 	
 	public String suche(int A[], int v){	
 		int len = A.length;
