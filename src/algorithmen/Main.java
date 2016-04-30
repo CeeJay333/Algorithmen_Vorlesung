@@ -3,14 +3,28 @@ package algorithmen;
 public class Main {
 
 	public static void main(String[] args) {
-		Funktionen f = new Funktionen();
+		/*Funktionen f = new Funktionen();
 		MergeSort m = new MergeSort();
 		int a[] = f.generateRandomArray(100, 100);
 		System.out.println("Dauer: " + m.sortDesc(a, 0, a.length));		
+		*/
+		
 	}
 	
 	/*
 	public static void archiv(){
+	
+		---------------------------------------------
+		//Warteschlagen
+		Warteschlangen w = new Warteschlangen();
+		int b[] = new int[25];
+		w.enqueue(b, 7);
+		w.enqueue(b, 9);
+		w.enqueue(b, 166);
+		w.enqueue(b, 99);
+		System.out.println(w.dequeue(b));
+		
+	
 		//Vorlesung 3+4
 		//MergeSort
 		MergeSort m = new MergeSort();		
@@ -25,7 +39,7 @@ public class Main {
 		int a[] = f.generateRandomArray(100, 100);
 		sort.sortASC(a, a.length);
 		
-		//Übung1Suchproblem suche = new Übung1Suchproblem();		
+		//ï¿½bung1Suchproblem suche = new ï¿½bung1Suchproblem();		
 		//int x[] = {31,29,59,26,41,58};
 		//System.out.println(suche.suche(a, 42));
 		
