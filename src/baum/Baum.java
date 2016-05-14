@@ -22,9 +22,9 @@ public class Baum {
 		if(startknoten.knotenRechtsValid()){
 			ausgabe(startknoten.knoten_rechts);
 		}
-		System.out.println(startknoten.schlüssel);
-		
-	}public void ausgabe(){
+		System.out.println(startknoten.schlüssel);		
+	}
+	public void ausgabe(){
 		if(knoten.knotenLinksValid()){
 			ausgabe(knoten.knoten_links);
 		}
