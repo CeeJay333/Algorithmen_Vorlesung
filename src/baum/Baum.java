@@ -13,7 +13,6 @@ public class Baum {
 		knoten.knoten_rechts.knoten_links = new Knoten(2);
 		knoten.knoten_rechts.knoten_rechts = new Knoten(21);
 	}
-
 	
 	public void ausgabe(Knoten startknoten){
 		if(startknoten.knotenLinksValid()){
@@ -24,7 +23,9 @@ public class Baum {
 		}
 		System.out.println(startknoten.schlüssel);		
 	}
-	public void ausgabe(){
+	
+	public void ausgabe(){ 
+		//funktion überladen. wird kein Parameter übergeben: Startknoten = knoten
 		if(knoten.knotenLinksValid()){
 			ausgabe(knoten.knoten_links);
 		}
