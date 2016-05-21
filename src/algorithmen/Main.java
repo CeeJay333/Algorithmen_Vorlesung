@@ -3,11 +3,11 @@ package algorithmen;
 public class Main {
 
 	public static void main(String[] args) {
-		/*Funktionen f = new Funktionen();
-		MergeSort m = new MergeSort();
-		int a[] = f.generateRandomArray(100, 100);
-		System.out.println("Dauer: " + m.sortDesc(a, 0, a.length));		
-		*/
+		Funktionen f = new Funktionen();
+		int a[] = f.generateRandomArray(10, 100);
+		Heapsort h = new Heapsort();
+		f.printArray(h.heapsortDesc(a));
+//		System.out.println("Dauer: " + m.sortDesc(a, 0, a.length));		
 		
 	}
 	

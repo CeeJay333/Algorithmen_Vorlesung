@@ -14,6 +14,7 @@ public class Baum {
 		knoten.knoten_rechts.knoten_rechts = new Knoten(21);
 	}
 	
+	
 	public void ausgabe(Knoten startknoten){
 		if(startknoten.knotenLinksValid()){
 			ausgabe(startknoten.knoten_links);
