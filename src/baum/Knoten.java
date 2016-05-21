@@ -13,7 +13,8 @@ public class Knoten {
 			if(knoten_links.schlüssel == 1){				
 			}
 			return true;
-		}catch(Exception e){			
+		}catch(Exception e){
+			//Prüfen fehlgeschlagen. Knoten ist invalid
 		}
 		return false;		
 	}
