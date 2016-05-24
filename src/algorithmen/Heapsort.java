@@ -1,19 +1,16 @@
 package algorithmen;
 
 public class Heapsort {		
-	
+	int array[];
 	public int heapsortDesc(int a[])[]{
+		array = a;
 		int n = a.length-1;
-		build_max_heap(a,n);
+		build_max_heap(n);
 		for(int i=n;i>1;i--){
-			tausche(a,1,i);
-			max_heapify(a,1,i-1);
+			tausche(1,i);
+			max_heapify(1,i-1);
 		}
-		return a;
-	}
-	
-	private int getVater(int index){
-		return index/2;
+		return array;
 	}
 	
 	private int getLinkesKind(int index){
@@ -24,14 +21,16 @@ public class Heapsort {
 		return (index*2)+1;
 	}
 	
-	private void build_max_heap(int array[], int length){
-		for(int i=length/2;i>0;i--){
-			max_heapify(array, i, length);
+	private void build_max_heap( int length){
+		System.out.println("Max Heap ermitteln");
+		for(int i=length/2;i>=0;i--){
+			max_heapify(i, length);
 		}
+		
 	}
 	
 	
-	private void max_heapify(int array[],int index, int length){
+	private void max_heapify(int index, int length){
 		//Repariert den Baum. Setzt den größten Wert an die Spitze, alle Kinder sind gleich oder kleiner		
 		int largest;
 		
@@ -51,12 +50,12 @@ public class Heapsort {
 		//ist das linke oder das rechte Kind größer als der aktuelle Wert, 
 		//tauschen und für das Kind funktion erneut ausführen		
 		if(largest != index){
-			tausche(array,index,largest);
-			max_heapify(array,largest,length);
+			tausche(index,largest);
+			max_heapify(largest,length);
 		}
 	}
 	
-	private void tausche(int array[], int a, int b){
+	private void tausche(int a, int b){
 		int x = array[a];
 		array[a] = array[b];
 		array[b] = x;
