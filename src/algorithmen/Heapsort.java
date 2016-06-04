@@ -2,6 +2,7 @@ package algorithmen;
 
 public class Heapsort {		
 	int array[];
+	
 	public int heapsortDesc(int a[])[]{
 		array = a;
 		int n = a.length-1;

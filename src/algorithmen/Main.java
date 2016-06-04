@@ -5,8 +5,11 @@ public class Main {
 	public static void main(String[] args) {
 		Funktionen f = new Funktionen();
 		int a[] = f.generateRandomArray(10, 100);
-		Heapsort h = new Heapsort();
-		f.printArray(h.heapsortDesc(a));
+		Quicksort q = new Quicksort(a);
+		f.printArray(q.getArray());
+		q.quicksort(0, a.length-1);
+		
+		f.printArray(q.getArray());
 		
 //		System.out.println("Dauer: " + m.sortDesc(a, 0, a.length));		
 		
