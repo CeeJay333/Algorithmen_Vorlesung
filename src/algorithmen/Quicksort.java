@@ -4,7 +4,7 @@ public class Quicksort {
 	int[] A;
 	
 	public Quicksort(int[] array){
-		//Das Array wird in A gespeichert. Im Skript wird es mit jedem Prozeduraufruf schreibend übergeben
+		//Das Array wird in A gespeichert. Im Vorlesungsskript wird es mit jedem Prozeduraufruf schreibend übergeben
 		A = array;
 	}
 	
@@ -29,12 +29,12 @@ public class Quicksort {
 		//A ist das Array
 		//p ist das erste Element
 		//r ist das letzte Element
-		int x = A[r];				//x ist der Wert des Pivotelementes
-		int i = p-1;				//i ist Trennindex
+		int x = A[r];					//x ist der Wert des Pivotelementes
+		int i = p-1;					//i ist Trennindex
 		for(int j=p;j<=r-1;j++){		//durchlaufe das Feld bis zum Pivotelement
-			if(A[j]<=x){			//ist der Wert kleiner als der Pivotwert
-				i=i+1;				//Trennindex um 1 erhöhen
-				tausche(i,j);		//Elemente Tauschen
+			if(A[j]<=x){				//ist der Wert kleiner als der Pivotwert
+				i=i+1;					//Trennindex um 1 erhöhen
+				tausche(i,j);			//Elemente Tauschen
 			}
 		}
 		tausche(i+1,r);				//Am Ende setze das Pivotelement zwischen das kleine und das große Feld

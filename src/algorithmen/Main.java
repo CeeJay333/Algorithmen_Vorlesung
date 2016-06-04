@@ -4,14 +4,15 @@ public class Main {
 
 	public static void main(String[] args) {
 		Funktionen f = new Funktionen();
-		int a[] = f.generateRandomArray(10, 100);
+		//int a[] = f.generateArray(true, 10000);
+		int a[] = f.generateRandomArray(10000, 1);
 		Quicksort q = new Quicksort(a);
 		f.printArray(q.getArray());
+		f.setZeitStart();
 		q.quicksort(0, a.length-1);
-		
+		f.setZeitStop();
 		f.printArray(q.getArray());
-		
-//		System.out.println("Dauer: " + m.sortDesc(a, 0, a.length));		
+		System.out.println("Dauer: " + f.getZeitUnterschied());		
 		
 	}
 	
