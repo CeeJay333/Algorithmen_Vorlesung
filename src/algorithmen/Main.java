@@ -5,15 +5,14 @@ public class Main {
 	public static void main(String[] args) {
 		Funktionen f = new Funktionen();
 		//int a[] = f.generateArray(true, 10000);
-		int a[] = f.generateRandomArray(10000, 1);
-		Quicksort q = new Quicksort(a);
-		f.printArray(q.getArray());
+		int a[] = f.generateRandomArray(10, 10);
+		Countingsort c = new Countingsort(a);
+		f.printArray(a);
 		f.setZeitStart();
-		q.quicksort(0, a.length-1);
+		c.countingsort();
 		f.setZeitStop();
-		f.printArray(q.getArray());
+		f.printArray(c.getSortedArray());
 		System.out.println("Dauer: " + f.getZeitUnterschied());		
-		
 	}
 	
 	/*
